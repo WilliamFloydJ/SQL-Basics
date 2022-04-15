@@ -1,0 +1,10 @@
+Select Count(*) from invoice where billing_country='USA';
+SELECT MAX(total) from invoice;
+SELECT MIN(total) from invoice;
+Select * from invoice where total > 5;
+Select Count(*) from invoice where total < 5;
+Select Count(*) from invoice where billing_state IN(CA, TX, AZ);
+Select AVG(total) from invoice;
+SELECT SUM(total) from invoice;
+UPDATE invoice set total = 24 where invoice_id = 5;
+delete from invoice where invoice_id = 1;

@@ -8,3 +8,9 @@
 -- ('Nala', 'lion', 2),
 -- ('Marie', 'cat', 1),
 -- ('Flounder', 'fish', 8);
+
+create table animals(id serial primary key, name varChar(255), type varChar(255), age int);
+Select * from animals;
+delete animals where type = 'lion';
+delete animals where name like 'm%';
+delete animals where age < 9;
